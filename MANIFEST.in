@@ -1,0 +1,53 @@
+include README.md
+include README_ru.md
+include LICENSE
+
+# pypass файлы для сборки
+recursive-include MiaUI/miaui_mi/security/pypass/src *
+recursive-include MiaUI/miaui_mi/security/pypass/include *
+include MiaUI/miaui_mi/security/pypass/Makefile
+include MiaUI/miaui_mi/security/pypass/*.c
+include MiaUI/miaui_mi/security/pypass/*.h
+
+# Help файлы
+include MiaUI/miaui_mi/help/*.txt
+include MiaUI/miaui_mi/help/*.json
+
+# Bash папка (в корне проекта!)
+recursive-include bash *.sh
+recursive-include bash *.txt
+include bash/banners/*.txt
+
+# Игры
+recursive-include MiaUI/games *.py
+
+# Lua скрипты
+recursive-include MiaUI/miaui_mi_pro *.lua
+include MiaUI/miaui_mi_pro/*.txt
+
+# C исходники для расширений
+include MiaUI/miaui_mi_plus/*.c
+include MiaUI/miaui_mi_plus/*.h
+include MIA_Core/Cimport/*.c
+include MIA_Core/Cimport/*.h
+
+# MIA_Core файлы
+recursive-include MIA_Core/plugin *.py
+recursive-include MIA_Core/Cpython *.py
+recursive-include MIA_Core/Cpython/img *.py
+include MIA_Core/Cimport/*.c
+include MIA_Core/Cimport/*.h
+
+# MIA_Core файлы
+recursive-include MIA_Core/plugin *.py
+recursive-include MIA_Core/Cpython *.py
+recursive-include MIA_Core/Cpython/img *.py
+
+# Исключить ненужное
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.so
+global-exclude *.o
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.db

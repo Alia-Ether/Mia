@@ -1,0 +1,131 @@
+  💠 MIA — INTELLIGENCE SYSTEM 💠
+══════════════════════════════════════════════════════════
+
+╭──────────────────────────────────────────────────────╮
+│  🎨  LUA ENGINE — VISUAL MAGIC                        │
+╰──────────────────────────────────────────────────────╯
+❯ mia palette      🎨  256-color terminal grid
+❯ mia full         🌈  Fullscreen live palette
+❯ mia anim <name>  ✨  Effects (rainbow, fire, neon, cyber, pulse)
+❯ mia <hex> <txt>  🖌️  Print text in TrueColor HEX
+
+╭──────────────────────────────────────────────────────╮
+│  🐍  PYTHON ENGINE — MANAGEMENT                       │
+╰──────────────────────────────────────────────────────╯
+❯ mia help         📖  Show this help window
+❯ mia ai           🤖  Intelligent dialogue with Sonya
+❯ mia scan         🔍  Full system security audit
+❯ mia games        🎮  Launch game launcher
+❯ mia sofia        📊  SOFIA System Monitor
+❯ mia report       📬  Create report and send to admin
+
+╭──────────────────────────────────────────────────────╮
+│  📬  REPORT SYSTEM                                    │
+╰──────────────────────────────────────────────────────╯
+❯ mia report       📝  Run report creation wizard
+                      •   Problem description
+                      •   What was attempted
+                      •   Logs and additional info
+                      •   Contact details
+                      •   Send to admin @FrontendVSCode
+
+╭──────────────────────────────────────────────────────╮
+│  🧬  C-CORE — DIRECT KERNEL ACCESS                   │
+╰──────────────────────────────────────────────────────╯
+Methods called via: import miaui_mi.core as c
+
+📡  SYSTEM & NETWORK:
+• Kernel        ❯  python -c "import miaui_mi.core as c; print(c.kernel())"
+• IP Address    ❯  python -c "import miaui_mi.core as c; print(c.local_ip())"
+• MAC Address   ❯  python -c "import miaui_mi.core as c; print(c.mac())"
+• Sockets       ❯  python -c "import miaui_mi.core as c; print(c.sockets())"
+• Traffic       ❯  python -c "import miaui_mi.core as c; print(c.traffic())"
+
+⚙️  RESOURCES & HARDWARE:
+• RAM           ❯  python -c "import miaui_mi.core as c; print(c.ram())"
+• Temperature   ❯  python -c "import miaui_mi.core as c; print(f'🌡️ {c.temp()}°C')"
+• CPU Frequency ❯  python -c "import miaui_mi.core as c; print(c.cpu_freq())"
+• CPU Load %    ❯  python -c "import miaui_mi.core as c; print(c.cpu_usage())"
+• Hunter        ❯  python -c "import miaui_mi.core as c; print(c.hunter())"
+• Battery       ❯  python -c "import miaui_mi.core as c; print(c.battery())"
+• Disk          ❯  python -c "import miaui_mi.core as c; print(c.disk('/data'))"
+
+🔐  SECURITY & ANALYSIS:
+• Security      ❯  python -c "import miaui_mi.core as c; print(c.security())"
+• Entropy       ❯  python -c "import miaui_mi.core as c; print(c.entropy())"
+• Processes     ❯  python -c "import miaui_mi.core as c; print(c.pids())"
+• Display       ❯  python -c "import miaui_mi.core as c; print(c.display())"
+• Activity      ❯  python -c "import miaui_mi.core as c; print(c.activity())"
+• Pulse         ❯  python -c "import miaui_mi.core as c; print(c.pulse())"
+
+╭──────────────────────────────────────────────────────╮
+│  📊  SOFIA SYSTEM MONITOR                             │
+╰──────────────────────────────────────────────────────╯
+Usage: sofia [options]
+  -d  detailed mode (all CPU cores)
+  -i  device information
+  -n  network information
+  -c  camera information
+  -s  sensor information
+  -j  JSON output (one-shot)
+  -h  this help
+
+Without options starts interactive monitor
+  'q' - quit
+  '0' - restart monitor
+
+╭──────────────────────────────────────────────────────╮
+│  🔐  MIA CORE — AVB / FIRMWARE TOOLS                  │
+╰──────────────────────────────────────────────────────╯
+Commands called via: mia-core <command> [options]
+
+📋  INFORMATION:
+• info          ❯  mia-core info <file>           → pretty output
+• info -e       ❯  mia-core info -e <file>        → raw miatool output
+• info_image    ❯  mia-core info_image <file>     → AVB image information
+• version       ❯  mia-core version               → miatool version
+• help          ❯  mia-core help                  → show documentation
+
+🔧  CREATION & SIGNING:
+• make_vbmeta   ❯  mia-core make_vbmeta_image --output <out> --key <key>
+• add_hash      ❯  mia-core add_hash_footer --image <img> --partition_name <name>
+• add_hashtree  ❯  mia-core add_hashtree_footer --image <img> --partition_name <name>
+
+🔑  KEYS & DIGESTS:
+• extract_key   ❯  mia-core extract_public_key --key <priv> --output <pub>
+• vbmeta_digest ❯  mia-core calculate_vbmeta_digest --image <img>
+• kernel_cmdline❯  mia-core calculate_kernel_cmdline --image <img>
+
+✅  VERIFICATION & CLEANUP:
+• verify        ❯  mia-core verify_image --image <img> --key <pub>
+• erase         ❯  mia-core erase_footer --image <img>
+• zero_hashtree ❯  mia-core zero_hashtree --image <img>
+
+📜  CERTIFICATES:
+• make_cert     ❯  mia-core make_certificate --subject <sub> --subject_key <key> --output <out>
+• make_atx      ❯  mia-core make_atx_certificate --subject <sub> --subject_key <key>
+• perm_attr     ❯  mia-core make_cert_permanent_attributes --root_authority_key <key> --product_id <id>
+
+╭──────────────────────────────────────────────────────╮
+│  📦  QUICK EXAMPLES                                   │
+╰──────────────────────────────────────────────────────╯
+❯ mia-core info boot.img
+❯ mia-core info_image vendor.img
+❯ mia-core make_vbmeta_image --output vbmeta.img --key private.pem
+❯ mia-core --help  full miatool reference
+
+╭──────────────────────────────────────────────────────╮
+│  🎨  TERMINAL THEME — BASH                            │
+╰──────────────────────────────────────────────────────╯
+❯ mia bash       → Launch banner gallery & PS1 selector
+
+══════════════════════════════════════════════════════════
+💡 Sonya: Every command is a direct request to your kernel.
+      If you encounter problems — use: mia report
+
+👤 Owner    : Alia Ether 🌷
+📱 Contact  : @FrontendVSCode
+📢 Channel  : https://t.me/FrontendLed
+📜 LICENSE  : ETHERIUM USAGE LICENSE (EUL)
+🐙 GitHub   : https://github.com/Alia-Ether/Mia
+══════════════════════════════════════════════════════════

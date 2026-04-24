@@ -1,0 +1,131 @@
+  💠 MIA — ИНТЕЛЛЕКТУАЛЬНАЯ СИСТЕМА 💠
+══════════════════════════════════════════════════════════
+
+╭──────────────────────────────────────────────────────╮
+│  🎨  LUA ДВИЖОК — ВИЗУАЛЬНАЯ МАГИЯ                    │
+╰──────────────────────────────────────────────────────╯
+❯ mia palette      🎨  Сетка 256 цветов терминала
+❯ mia full         🌈  Полноэкранная живая палитра
+❯ mia anim <имя>   ✨  Эффекты (rainbow, fire, neon, cyber, pulse)
+❯ mia <hex> <txt>  🖌️  Печать текста в TrueColor HEX
+
+╭──────────────────────────────────────────────────────╮
+│  🐍  PYTHON ДВИЖОК — УПРАВЛЕНИЕ                       │
+╰──────────────────────────────────────────────────────╯
+❯ mia help         📖  Показать это окно справки
+❯ mia ai           🤖  Интеллектуальный диалог с Sonya
+❯ mia scan         🔍  Полный аудит безопасности системы
+❯ mia games        🎮  Запустить игровой лаунчер
+❯ mia sofia        📊  Системный монитор SOFIA
+❯ mia report       📬  Создать отчёт и отправить админу
+
+╭──────────────────────────────────────────────────────╮
+│  📬  СИСТЕМА ОТЧЁТОВ                                  │
+╰──────────────────────────────────────────────────────╯
+❯ mia report       📝  Запустить мастер создания отчёта
+                      •   Описание проблемы
+                      •   Что было предпринято
+                      •   Логи и дополнительная информация
+                      •   Контактные данные
+                      •   Отправить админу @FrontendVSCode
+
+╭──────────────────────────────────────────────────────╮
+│  🧬  C-CORE — ПРЯМОЙ ДОСТУП К ЯДРУ                    │
+╰──────────────────────────────────────────────────────╯
+Методы вызываются через: import miaui_mi.core as c
+
+📡  СИСТЕМА И СЕТЬ:
+• Ядро          ❯  python -c "import miaui_mi.core as c; print(c.kernel())"
+• IP Адрес      ❯  python -c "import miaui_mi.core as c; print(c.local_ip())"
+• MAC Адрес     ❯  python -c "import miaui_mi.core as c; print(c.mac())"
+• Сокеты        ❯  python -c "import miaui_mi.core as c; print(c.sockets())"
+• Трафик        ❯  python -c "import miaui_mi.core as c; print(c.traffic())"
+
+⚙️  РЕСУРСЫ И ОБОРУДОВАНИЕ:
+• ОЗУ           ❯  python -c "import miaui_mi.core as c; print(c.ram())"
+• Температура   ❯  python -c "import miaui_mi.core as c; print(f'🌡️ {c.temp()}°C')"
+• Частота CPU   ❯  python -c "import miaui_mi.core as c; print(c.cpu_freq())"
+• Загрузка CPU  ❯  python -c "import miaui_mi.core as c; print(c.cpu_usage())"
+• Hunter        ❯  python -c "import miaui_mi.core as c; print(c.hunter())"
+• Батарея       ❯  python -c "import miaui_mi.core as c; print(c.battery())"
+• Диск          ❯  python -c "import miaui_mi.core as c; print(c.disk('/data'))"
+
+🔐  БЕЗОПАСНОСТЬ И АНАЛИЗ:
+• Безопасность  ❯  python -c "import miaui_mi.core as c; print(c.security())"
+• Энтропия      ❯  python -c "import miaui_mi.core as c; print(c.entropy())"
+• Процессы      ❯  python -c "import miaui_mi.core as c; print(c.pids())"
+• Дисплей       ❯  python -c "import miaui_mi.core as c; print(c.display())"
+• Активность    ❯  python -c "import miaui_mi.core as c; print(c.activity())"
+• Пульс         ❯  python -c "import miaui_mi.core as c; print(c.pulse())"
+
+╭──────────────────────────────────────────────────────╮
+│  📊  СИСТЕМНЫЙ МОНИТОР SOFIA                           │
+╰──────────────────────────────────────────────────────╯
+Использование: sofia [опции]
+  -d  детальный режим (все ядра CPU)
+  -i  информация об устройстве
+  -n  сетевая информация
+  -c  информация о камере
+  -s  информация о сенсорах
+  -j  вывод в JSON (однократный)
+  -h  эта справка
+
+Без опций запускает интерактивный монитор
+  'q' - выход
+  '0' - перезапуск монитора
+
+╭──────────────────────────────────────────────────────╮
+│  🔐  MIA CORE — AVB / ИНСТРУМЕНТЫ ПРОШИВОК            │
+╰──────────────────────────────────────────────────────╯
+Команды вызываются через: mia-core <команда> [опции]
+
+📋  ИНФОРМАЦИЯ:
+• info          ❯  mia-core info <файл>           → красивый вывод
+• info -e       ❯  mia-core info -e <файл>        → сырой вывод miatool
+• info_image    ❯  mia-core info_image <файл>     → информация об образе (AVB)
+• version       ❯  mia-core version               → версия miatool
+• help          ❯  mia-core help                  → показать документацию
+
+🔧  СОЗДАНИЕ И ПОДПИСЬ:
+• make_vbmeta   ❯  mia-core make_vbmeta_image --output <файл> --key <ключ>
+• add_hash      ❯  mia-core add_hash_footer --image <файл> --partition_name <имя>
+• add_hashtree  ❯  mia-core add_hashtree_footer --image <файл> --partition_name <имя>
+
+🔑  КЛЮЧИ И ДАЙДЖЕСТЫ:
+• extract_key   ❯  mia-core extract_public_key --key <приватный> --output <публичный>
+• vbmeta_digest ❯  mia-core calculate_vbmeta_digest --image <файл>
+• kernel_cmdline❯  mia-core calculate_kernel_cmdline --image <файл>
+
+✅  ПРОВЕРКА И ОЧИСТКА:
+• verify        ❯  mia-core verify_image --image <файл> --key <публичный>
+• erase         ❯  mia-core erase_footer --image <файл>
+• zero_hashtree ❯  mia-core zero_hashtree --image <файл>
+
+📜  СЕРТИФИКАТЫ:
+• make_cert     ❯  mia-core make_certificate --subject <тема> --subject_key <ключ> --output <файл>
+• make_atx      ❯  mia-core make_atx_certificate --subject <тема> --subject_key <ключ>
+• perm_attr     ❯  mia-core make_cert_permanent_attributes --root_authority_key <ключ> --product_id <id>
+
+╭──────────────────────────────────────────────────────╮
+│  📦  ПРИМЕРЫ ИСПОЛЬЗОВАНИЯ                            │
+╰──────────────────────────────────────────────────────╯
+❯ mia-core info boot.img
+❯ mia-core info_image vendor.img
+❯ mia-core make_vbmeta_image --output vbmeta.img --key private.pem
+❯ mia-core --help  # полная справка miatool
+
+╭──────────────────────────────────────────────────────╮
+│  🎨  ТЕМА ТЕРМИНАЛА — BASH                            │
+╰──────────────────────────────────────────────────────╯
+❯ mia bash       → запустить галерею баннеров и выбор PS1
+
+══════════════════════════════════════════════════════════
+💡 Sonya: Каждая команда — это прямой запрос к твоему ядру.
+      Если возникли проблемы — используй: mia report
+
+👤 Владелец : Alia Ether 🌷
+📱 Контакт  : @FrontendVSCode
+📢 Канал    : https://t.me/FrontendLed
+📜 ЛИЦЕНЗИЯ : ETHERIUM USAGE LICENSE (EUL)
+🐙 GitHub   : https://github.com/Alia-Ether/Mia
+══════════════════════════════════════════════════════════

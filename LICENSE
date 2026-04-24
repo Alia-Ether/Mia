@@ -1,0 +1,117 @@
+                    ETHERIUM USAGE LICENSE (EUL)
+                             Version 2.0
+                  Copyright (c) 2007–2026 Alia Ether 𖤍
+                          All rights reserved.
+
+
+
+1. DEFINITIONS
+
+“Product” means the software, source code, binaries, scripts,
+AI models, datasets, documentation and related materials.
+
+“You” means any individual or legal entity using the Product.
+
+“Use” means executing, studying, modifying, or running the Product.
+
+2. PERMITTED USE (OPEN USE)
+
+You are allowed to:
+
+• Use the Product for personal, educational, and research purposes  
+• Study and modify the source code for private use  
+• Run the Product in your own environment  
+• Share small excerpts of code for educational discussion  
+
+3. RESTRICTED USE (CONTROLLED)
+
+Without explicit written permission from the Author, you may NOT:
+
+• Sell or commercially exploit the Product  
+• Redistribute the full Product or modified versions  
+• Publish forks or mirrors (GitHub, GitLab, etc.)  
+• Rebrand or present the Product as your own  
+• Provide the Product as a service (SaaS, API, hosting)  
+• Create competing products based on the Product  
+
+4. MODIFICATIONS
+
+You may modify the Product for private use only.
+
+If permission is granted to publish modifications:
+
+• Original authorship must be preserved  
+• Changes must be clearly documented  
+• This License must remain attached  
+
+5. ATTRIBUTION
+
+Any allowed public reference must include:
+
+• Author: Alia Ether  
+• Project name: MIA  
+• Link to official source (if provided)  
+
+You must not remove or alter attribution notices.
+
+6. THIRD-PARTY COMPONENTS
+
+Parts of the Product may include third-party software
+(e.g. Android Verified Boot tools by Google).
+
+Such components are governed by their own licenses,
+which must be respected separately.
+
+7. AI / SECURITY DISCLAIMER
+
+If the Product includes AI, OSINT, or security tools:
+
+• You are fully responsible for usage and consequences  
+• You must comply with all applicable laws  
+• The Author is not liable for misuse  
+
+8. DISCLAIMER OF WARRANTY
+
+THE PRODUCT IS PROVIDED “AS IS” WITHOUT WARRANTIES OF ANY KIND.
+
+The Author does not guarantee:
+
+• correctness  
+• security  
+• stability  
+• legality of usage  
+
+9. LIMITATION OF LIABILITY
+
+The Author is not liable for:
+
+• any damages  
+• data loss  
+• legal consequences  
+• misuse of the Product  
+
+Use is at your own risk.
+
+10. TERMINATION
+
+This License terminates automatically upon violation.
+
+Upon termination you must:
+
+• stop using the Product  
+• delete all copies  
+
+11. GOVERNING LAW
+
+This License is governed by the laws of the Author’s jurisdiction.
+
+12. GENERAL PROVISIONS
+
+• If any part is invalid, the rest remains valid  
+• This is the complete agreement  
+• No rights are granted unless explicitly stated  
+
+The Product is intended for educational, research,
+and controlled usage only.
+
+Commercial use requires explicit permission.
